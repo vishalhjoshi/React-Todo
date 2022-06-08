@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
+  width: 80%;
+  margin: 0px auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.tabel-container {
+  width: 80%;
+  margin: 50px auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  width: 444px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.name input {
+  border: none;
+  outline: none;
+  width: 50%;
+  display: inline-block;
+}
+.form-element-container {
+  width: 467px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.email,
+.mobile {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.email > input,
+.mobile > input {
+  border: none;
+  outline: none;
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.savebtn,
+.viewbtn {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-container {
+  padding: 10px;
+  border: 1px solid black;
+}
+.btn-container button {
+  background-color: green;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.viewbtn .btn-container button {
+  background-color: darkmagenta;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.enddate,
+.startdate {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.date {
+  display: block;
+  margin-bottom: 5px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+td div button {
+  display: inline-block;
 }
